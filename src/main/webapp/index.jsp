@@ -19,11 +19,29 @@
 	<h2>${MSG}</h2>
 	<form action="createAccount">
 		<h3>Create a new Account</h3>
-		name<input type="text" name="name"> <br> 
-		contact number<input type="text" name="contactNo"> <br>
-		address<input type="text" name="address"> <br>
-		account balance<input type="text" name="accountBalance">
-		<br> <input type="submit" value="create account">
+		<table>
+			<tr>
+				<td>name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>contact number</td>
+				<td><input type="text" name="contactNo"></td>
+			</tr>
+			<tr>
+				<td>address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>account balance</td>
+				<td><input type="text" name="accountBalance"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="create account"></td>			
+			</tr>
+		</table>
+		
+		
 	</form>
 	<hr>
 	<form action="showAllAccountHolders">
@@ -33,13 +51,29 @@
 	<hr>
 	<form action="updateAccount">
 		<h3>Update an Account</h3>
-		Enter id<input type="text" name="id"> <br>
-		Enter name<input type="text" name="name"> <br> 
-		Enter contact number<input type="text" name="contactNo"> <br> 
-		Enter address<input type="text" name="address"> <br> 
-		Enter account balance<input	type="text" name="accountBalance"> <br>
-		<input type="submit"value="update account">
-
+		<table>
+			<tr>
+				<td>Enter id</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>contact number</td>
+				<td><input type="text" name="contactNo"></td>
+			</tr>
+			<tr>
+				<td>address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td>account balance</td>
+				<td><input type="text" name="accountBalance"></td>
+			</tr>
+			<tr><td><input type="submit" value="update account"></td></tr>
+		</table>
 	</form>
 	<hr>
 	<form action="deleteAccount">
@@ -47,6 +81,12 @@
 		Enter Id <input type="text" name="id"> <br>
 		<input type="submit" value="delete account">
 	</form>
-
+	
+	<hr>
+	<form action="search">
+		<input type="text" name="keyword">
+		<input type="submit" value="Search">
+	</form>
+	
 </body>
 </html>
